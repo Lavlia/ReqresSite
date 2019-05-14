@@ -24,31 +24,15 @@ Feature: Check the functionality of the Users feature
     Then The status code should be 200 Ok
 
 #Third scenario
-  @TC02-a
-  Scenario: Check the response on GET operation for retrieving details for an user an using invalid field
-    Given User is on Reqres site on user page with email "george.bluth@reqres.in"
-    When User wants to retrieve details for an user with that email
-    Then The status code should be 404 Not Found
-
-#Fourth scenario
   @TC03
   Scenario: Check the response on POST operation for creating an user
-    Given User is on Reqres site and filling a user form
+    Given User is on Reqres site and filling an user form
       | email                | first_name | last_name | job    |
       | may_maymay@reqres.in | may        | maymay    | tester |
     When User sends the user form filled out
     Then The status code should be 201 Created
 
-#Fifth scenario
-  @TC03-a
-  Scenario: Check the response on POST operation for creating an user with required fields not filled out
-    Given User is on Reqres site and filling a user form for invalid user
-      | job    |
-      | tester |
-    When User sends the user form filled out for invalid user
-    Then The status code should be 400 Bad Request
-
-#Sixth scenario
+#Fourth scenario
   @TC04
   Scenario: Check the response on PUT operation for updating an user
     Given User is on Reqres site and updating an user
@@ -57,16 +41,7 @@ Feature: Check the functionality of the Users feature
     When User sends a request to update his/her details
     Then The status code should be 200 Ok
 
-#Seventh scenario
-  @TC04-a
-  Scenario: Check the response on PUT operation for updating an user with no payload send
-    Given User is on Reqres site and updating an user with no payload
-      | name | job | id |
-      |      |     | 6  |
-    When User sends a request to update his/her details
-    Then The status code should be 403 Forbidden
-
-#Eighth scenario
+#Fifth scenario
   @TC05
   Scenario: Check the response on DELETE operation for deleting an user
     Given User is on Reqres site on user page
@@ -75,8 +50,33 @@ Feature: Check the functionality of the Users feature
     When User wants to delete his/her account
     Then The status code should be 204 No Content
 
+#Sixth scenario
+  @TC06
+  Scenario: Check the response on GET operation for retrieving details for an user and using invalid field
+    Given User is on Reqres site on user page with email "george.bluth@reqres.in"
+    When User wants to retrieve details for an user with that email
+    Then The status code should be 404 Not Found
+
+#Seventh scenario
+  @TC07
+  Scenario: Check the response on POST operation for creating an user with required fields not filled out
+    Given User is on Reqres site and filling an user form for invalid user
+      | job    |
+      | tester |
+    When User sends the user form filled out for invalid user
+    Then The status code should be 400 Bad Request
+
+#Eighth scenario
+  @TC08
+  Scenario: Check the response on PUT operation for updating an user with no payload send
+    Given User is on Reqres site and updating an user with no payload
+      | name | job | id |
+      |      |     | 6  |
+    When User sends a request to update his/her details
+    Then The status code should be 403 Forbidden
+
 #Ninth scenario
-  @TC05-a
+  @TC09
   Scenario: Check the response on DELETE operation for deleting an user using an invalid field
     Given User is on Reqres site on users page
       | first_name |

@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="a787f0c7-32bd-4fa4-b1bf-1585d598f657" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/ApiUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/ApiUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rerun.txt" beforeDir="false" afterPath="$PROJECT_DIR$/rerun.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/features/RegisterUser.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/RegisterUser.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/features/UsersInfo.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/UsersInfo.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepsDefinition/RequestRegisterUserSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepsDefinition/RequestRegisterUserSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepsDefinition/RequestUsersInfoSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepsDefinition/RequestUsersInfoSteps.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,18 +24,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/stepsDefinition/RequestUsersInfoSteps.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
@@ -43,28 +33,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/features/UsersInfo.feature">
+        <entry file="file://$PROJECT_DIR$/src/main/java/utils/ApiUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/features/RegisterUser.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="698">
-              <caret line="43" column="42" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/stepsDefinition/RequestRegisterUserSteps.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+            <state relative-caret-position="153">
+              <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,20 +44,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/utils/Constants.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/features/LoginUser.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="67" selection-start-line="7" selection-start-column="67" selection-end-line="7" selection-end-column="67" />
+            <state relative-caret-position="493">
+              <caret line="29" column="40" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/utils/ApiUtils.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/stepsDefinition/RequestLoginUserSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+            <state relative-caret-position="-991">
+              <caret line="38" column="36" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -125,12 +97,14 @@
         <option value="$PROJECT_DIR$/src/test/java/stepsDefinition/GETRequestSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/features/UsersInfo.feature" />
-        <option value="$PROJECT_DIR$/src/main/java/utils/Constants.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/ApiUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/Constants.java" />
+        <option value="$PROJECT_DIR$/src/test/java/features/UsersInfo.feature" />
         <option value="$PROJECT_DIR$/src/test/java/stepsDefinition/RequestUsersInfoSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/features/RegisterUser.feature" />
         <option value="$PROJECT_DIR$/src/test/java/stepsDefinition/RequestRegisterUserSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/features/LoginUser.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/stepsDefinition/RequestLoginUserSteps.java" />
       </list>
     </option>
   </component>
@@ -158,8 +132,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
+    <option name="x" value="-99" />
+    <option name="y" value="17" />
     <option name="width" value="1939" />
     <option name="height" value="1049" />
   </component>
@@ -270,16 +244,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber java.Scenario: Check the response on POST operation for Register an user with invalid user credentials">
-    <configuration name="Scenario: Check the response on POST operation for Register an user with invalid user credentials" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber java.Scenario: Check the response on POST operation for Login with invalid user credentials">
+    <configuration name="Scenario: Check the response on POST operation for Login with invalid user credentials" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="4" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/RegisterUser.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/LoginUser.feature" />
       <option name="GLUE" value="stepsDefinition" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="ReqresSite" />
-      <option name="NAME_FILTER" value="^Check the response on POST operation for Register an user with invalid user credentials$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm4SMFormatter --name &quot;^Check the response on POST operation for Register an user with invalid user credentials$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Check the response on POST operation for Register an user with invalid user credentials" />
+      <option name="NAME_FILTER" value="^Check the response on POST operation for Login with invalid user credentials$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm4SMFormatter --name &quot;^Check the response on POST operation for Login with invalid user credentials$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Check the response on POST operation for Login with invalid user credentials" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -290,15 +264,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Check the response on POST operation for Register an user with no email send" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Check the response on POST operation for user Login with no email send" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="4" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/RegisterUser.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/LoginUser.feature" />
       <option name="GLUE" value="stepsDefinition" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="ReqresSite" />
-      <option name="NAME_FILTER" value="^Check the response on POST operation for Register an user with no email send$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm4SMFormatter --name &quot;^Check the response on POST operation for Register an user with no email send$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Check the response on POST operation for Register an user with no email send" />
+      <option name="NAME_FILTER" value="^Check the response on POST operation for user Login with no email send$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm4SMFormatter --name &quot;^Check the response on POST operation for user Login with no email send$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Check the response on POST operation for user Login with no email send" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -309,15 +283,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Check the response on POST operation for Register an user with no password send" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Check the response on POST operation for user Login with no password send" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="4" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/RegisterUser.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/LoginUser.feature" />
       <option name="GLUE" value="stepsDefinition" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="ReqresSite" />
-      <option name="NAME_FILTER" value="^Check the response on POST operation for Register an user with no password send$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm4SMFormatter --name &quot;^Check the response on POST operation for Register an user with no password send$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Check the response on POST operation for Register an user with no password send" />
+      <option name="NAME_FILTER" value="^Check the response on POST operation for user Login with no password send$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm4SMFormatter --name &quot;^Check the response on POST operation for user Login with no password send$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Check the response on POST operation for user Login with no password send" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -328,15 +302,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Check the response on POST operation for Register an user with no user credentials send" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Check the response on POST operation for user Login with no user credentials send" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="4" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/RegisterUser.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/LoginUser.feature" />
       <option name="GLUE" value="stepsDefinition" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="ReqresSite" />
-      <option name="NAME_FILTER" value="^Check the response on POST operation for Register an user with no user credentials send$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm4SMFormatter --name &quot;^Check the response on POST operation for Register an user with no user credentials send$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Check the response on POST operation for Register an user with no user credentials send" />
+      <option name="NAME_FILTER" value="^Check the response on POST operation for user Login with no user credentials send$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm4SMFormatter --name &quot;^Check the response on POST operation for user Login with no user credentials send$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Check the response on POST operation for user Login with no user credentials send" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -347,15 +321,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Check the response on POST operation for Register an user with valid data" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Check the response on POST operation for user Login with valid data" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="4" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/RegisterUser.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/LoginUser.feature" />
       <option name="GLUE" value="stepsDefinition" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="ReqresSite" />
-      <option name="NAME_FILTER" value="^Check the response on POST operation for Register an user with valid data$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm4SMFormatter --name &quot;^Check the response on POST operation for Register an user with valid data$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Check the response on POST operation for Register an user with valid data" />
+      <option name="NAME_FILTER" value="^Check the response on POST operation for user Login with valid data$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm4SMFormatter --name &quot;^Check the response on POST operation for user Login with valid data$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Check the response on POST operation for user Login with valid data" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -368,11 +342,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber java.Scenario: Check the response on POST operation for Register an user with invalid user credentials" />
-        <item itemvalue="Cucumber java.Scenario: Check the response on POST operation for Register an user with no user credentials send" />
-        <item itemvalue="Cucumber java.Scenario: Check the response on POST operation for Register an user with no password send" />
-        <item itemvalue="Cucumber java.Scenario: Check the response on POST operation for Register an user with no email send" />
-        <item itemvalue="Cucumber java.Scenario: Check the response on POST operation for Register an user with valid data" />
+        <item itemvalue="Cucumber java.Scenario: Check the response on POST operation for Login with invalid user credentials" />
+        <item itemvalue="Cucumber java.Scenario: Check the response on POST operation for user Login with no user credentials send" />
+        <item itemvalue="Cucumber java.Scenario: Check the response on POST operation for user Login with no password send" />
+        <item itemvalue="Cucumber java.Scenario: Check the response on POST operation for user Login with no email send" />
+        <item itemvalue="Cucumber java.Scenario: Check the response on POST operation for user Login with valid data" />
       </list>
     </recent_temporary>
   </component>
@@ -390,35 +364,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Scenario__Check_the_response_on_DELETE_operation_for_deleting_an_user_using_an_invalid_field - 2019.05.13 at 15h 03m 10s.xml">
-      <configuration name="Scenario: Check the response on DELETE operation for deleting an user using an invalid field" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Scenario__Check_the_response_on_DELETE_operation_for_deleting_an_user_using_an_invalid_field - 2019.05.13 at 15h 13m 53s.xml">
-      <configuration name="Scenario: Check the response on DELETE operation for deleting an user using an invalid field" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="TestRunner - 2019.05.13 at 15h 30m 27s.xml">
-      <configuration name="TestRunner" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestRunner - 2019.05.13 at 15h 46m 22s.xml">
-      <configuration name="TestRunner" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Scenario__Check_the_response_on_POST_operation_for_Register_an_user_with_valid_data - 2019.05.14 at 11h 37m 52s.xml">
-      <configuration name="Scenario: Check the response on POST operation for Register an user with valid data" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Scenario__Check_the_response_on_POST_operation_for_Register_an_user_with_valid_data - 2019.05.14 at 11h 38m 33s.xml">
-      <configuration name="Scenario: Check the response on POST operation for Register an user with valid data" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Scenario__Check_the_response_on_POST_operation_for_Register_an_user_with_no_email_send - 2019.05.14 at 12h 00m 40s.xml">
-      <configuration name="Scenario: Check the response on POST operation for Register an user with no email send" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Scenario__Check_the_response_on_POST_operation_for_Register_an_user_with_no_password_send - 2019.05.14 at 12h 03m 09s.xml">
-      <configuration name="Scenario: Check the response on POST operation for Register an user with no password send" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
     <history-entry file="Scenario__Check_the_response_on_POST_operation_for_Register_an_user_with_no_user_credentials_send - 2019.05.14 at 12h 05m 40s.xml">
       <configuration name="Scenario: Check the response on POST operation for Register an user with no user credentials send" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
     <history-entry file="Scenario__Check_the_response_on_POST_operation_for_Register_an_user_with_invalid_user_credentials - 2019.05.14 at 12h 09m 10s.xml">
       <configuration name="Scenario: Check the response on POST operation for Register an user with invalid user credentials" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__Check_the_response_on_POST_operation_for_user_Login_with_valid_data - 2019.05.14 at 13h 51m 22s.xml">
+      <configuration name="Scenario: Check the response on POST operation for user Login with valid data" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__Check_the_response_on_POST_operation_for_user_Login_with_valid_data - 2019.05.14 at 13h 52m 13s.xml">
+      <configuration name="Scenario: Check the response on POST operation for user Login with valid data" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__Check_the_response_on_POST_operation_for_user_Login_with_no_email_send - 2019.05.14 at 13h 57m 42s.xml">
+      <configuration name="Scenario: Check the response on POST operation for user Login with no email send" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__Check_the_response_on_POST_operation_for_user_Login_with_no_password_send - 2019.05.14 at 14h 00m 24s.xml">
+      <configuration name="Scenario: Check the response on POST operation for user Login with no password send" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__Check_the_response_on_POST_operation_for_user_Login_with_no_user_credentials_send - 2019.05.14 at 14h 02m 42s.xml">
+      <configuration name="Scenario: Check the response on POST operation for user Login with no user credentials send" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__Check_the_response_on_POST_operation_for_user_Login_with_no_user_credentials_send - 2019.05.14 at 14h 03m 06s.xml">
+      <configuration name="Scenario: Check the response on POST operation for user Login with no user credentials send" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__Check_the_response_on_POST_operation_for_Login_with_invalid_user_credentials - 2019.05.14 at 14h 06m 51s.xml">
+      <configuration name="Scenario: Check the response on POST operation for Login with invalid user credentials" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__Check_the_response_on_POST_operation_for_Login_with_invalid_user_credentials - 2019.05.14 at 14h 08m 09s.xml">
+      <configuration name="Scenario: Check the response on POST operation for Login with invalid user credentials" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -438,9 +412,9 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.2536913" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.2536913" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.26912183" />
+      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.22237961" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="2" />
       <window_info anchor="bottom" id="Version Control" order="3" />
@@ -609,6 +583,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/stepsDefinition/RequestUsersInfoSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="144" column="46" selection-start-line="144" selection-start-column="46" selection-end-line="144" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="61" selection-start-line="8" selection-start-column="61" selection-end-line="8" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -616,54 +607,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="67" selection-start-line="7" selection-start-column="67" selection-end-line="7" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/utils/ApiUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+        <state relative-caret-position="153">
+          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/stepsDefinition/RequestUsersInfoSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/features/UsersInfo.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/features/RegisterUser.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="698">
-          <caret line="43" column="42" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/stepsDefinition/RequestRegisterUserSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+        <state relative-caret-position="-617">
+          <caret line="62" column="54" selection-start-line="62" selection-start-column="54" selection-end-line="62" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/features/RegisterUser.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/features/UsersInfo.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="715">
+          <caret line="66" column="50" lean-forward="true" selection-start-line="66" selection-start-column="50" selection-end-line="66" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/stepsDefinition/RequestLoginUserSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-991">
+          <caret line="38" column="36" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/features/LoginUser.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="40" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
         </state>
       </provider>
     </entry>

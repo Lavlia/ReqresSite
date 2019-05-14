@@ -4,7 +4,7 @@ Feature: Check the functionality of the Register feature
   So i can become a member of the site
 
 #First scenario
-  @TC06
+  @TC10
   Scenario: Check the response on POST operation for Register an user with valid data
     Given User is on Reqres site on Register page and filling the field with valid data
       | email              | password |
@@ -13,25 +13,25 @@ Feature: Check the functionality of the Register feature
     Then The status code, for register, should be 200 Ok
 
 #Second scenario
-  @TC07
+  @TC11
   Scenario: Check the response on POST operation for Register an user with no email send
     Given User is on Reqres site on Register page and filling only the password field
-      | password |
-      | pistol   |
+      | email | password |
+      |       | pistol   |
     When User sends the request to register
     Then The status code, for register, should be 400 Bad Request
 
 #Third scenario
-  @TC08
+  @TC12
   Scenario: Check the response on POST operation for Register an user with no password send
     Given User is on Reqres site on Register page and filling only the email field
-      | email              |
-      | eve.holt@reqres.in |
+      | email              |password|
+      | eve.holt@reqres.in |        |
     When User sends the request to register
     Then The status code, for register, should be 400 Bad Request
 
 #Fourth scenario
-  @TC09
+  @TC13
   Scenario: Check the response on POST operation for Register an user with no user credentials send
     Given User is on Reqres site on Register page and not filling the fields required
       | email | password |
@@ -40,7 +40,7 @@ Feature: Check the functionality of the Register feature
     Then The status code, for register, should be 400 Bad Request
 
 #Fifth scenario
-  @TC10
+  @TC14
   Scenario: Check the response on POST operation for Register an user with invalid user credentials
     Given User is on Reqres site on Register page and filling the fields with valid data for an invalid user
       | email                  | password |

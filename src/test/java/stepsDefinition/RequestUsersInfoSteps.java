@@ -53,28 +53,9 @@ public class RequestUsersInfoSteps extends ApiUtils {
         response.then().log().all();
     }
 
-    //Third scenario - TC02-a
-    @Given("^User is on Reqres site on user page with email \"([^\"]*)\"$")
-    public void user_is_on_reqres_site_on_user_page_with_email_something(String email) {
-        requestSpecification.pathParam("email", email);
-
-    }
-
-    @When("User wants to retrieve details for an user with that email")
-    public void userWantsToRetrieveDetailsForAnUserWithThatEmail() {
-        response = requestSpecification.get(Constants.PATH_EMAIL_RESOURCE);
-        response.then().log().all();
-    }
-
-    @Then("^The status code should be (\\d+) Not Found$")
-    public void theStatusCodeShouldBeNotFound(int statusCodeNotFound) {
-        Assert.assertEquals(response.statusCode(), statusCodeNotFound);
-        Assert.assertTrue(response.getTimeIn(TimeUnit.SECONDS) <= 10, "Response time is not within limit");
-    }
-
-    //Fourth scenario - TC03
-    @Given("User is on Reqres site and filling a user form")
-    public void userIsOnReqresSiteAndFillingAUserForm(DataTable table) {
+    //Third scenario - TC03
+    @Given("User is on Reqres site and filling an user form")
+    public void userIsOnReqresSiteAndFillingAnUserForm(DataTable table) {
         List<Map<String, String>> data = table.asMaps(String.class, String.class);
 
         HashMap<String, Object> jsonObject = new HashMap<>();
@@ -98,29 +79,7 @@ public class RequestUsersInfoSteps extends ApiUtils {
         Assert.assertTrue(response.getTimeIn(TimeUnit.SECONDS) <= 10, "Response time is not within limit");
     }
 
-    //Fifth scenario - TC03-a
-    @Given("User is on Reqres site and filling a user form for invalid user")
-    public void userIsOnReqresSiteAndFillingAUserFormForInvalidUser(DataTable table) {
-        List<Map<String, String>> data = table.asMaps(String.class, String.class);
-        HashMap<String, Object> jsonObject = new HashMap<>();
-        jsonObject.put("job", data.get(0).get("job"));
-
-        requestSpecification.body(jsonObject);
-    }
-
-    @When("User sends the user form filled out for invalid user")
-    public void userSendsTheUserFormFilledOutForInvalidUser() {
-        response = requestSpecification.post(Constants.RESOURCE);
-        response.then().log().all();
-    }
-
-    @Then("The status code should be (\\d+) Bad Request")
-    public void theStatusCodeShouldBeBadRequest(int statusCodeBadRequest) {
-        Assert.assertEquals(response.statusCode(), statusCodeBadRequest);
-        Assert.assertTrue(response.getTimeIn(TimeUnit.SECONDS) <= 10, "Response time is not within limit");
-    }
-
-    //Sixth scenario - TC04
+    //Fourth scenario - TC04
     @Given("^User is on Reqres site and updating an user$")
     public void userIsOnReqresSiteAndUpdatingAnUserWithId(DataTable table) {
         List<Map<String, String>> data = table.asMaps(String.class, String.class);
@@ -140,27 +99,7 @@ public class RequestUsersInfoSteps extends ApiUtils {
         response.then().log().all();
     }
 
-
-    //Seventh scenario - TC04-a
-    @Given("User is on Reqres site and updating an user with no payload")
-    public void userIsOnReqresSiteAndUpdatingAnUserWithNoPayload(DataTable table) {
-        List<Map<String, String>> data = table.asMaps(String.class, String.class);
-        requestSpecification.pathParam("id", data.get(0).get("id"));
-
-        HashMap<String, Object> jsonObject = new HashMap<>();
-        jsonObject.put("name", data.get(0).get("name"));
-        jsonObject.put("job", data.get(0).get("job"));
-
-        requestSpecification.body(jsonObject);
-    }
-
-    @Then("The status code should be (\\d+) Forbidden")
-    public void theStatusCodeShouldBeForbidden(int statusCodeForbidden) {
-        Assert.assertEquals(response.statusCode(), statusCodeForbidden);
-        Assert.assertTrue(response.getTimeIn(TimeUnit.SECONDS) <= 10, "Response time is not within limit");
-    }
-
-    //Eighth scenario - TC05
+    //Fifth scenario - TC05
     @Given("User is on Reqres site on user page")
     public void userIsOnReqresSiteOnUserPage(DataTable table) {
         List<Map<String, String>> data = table.asMaps(String.class, String.class);
@@ -182,7 +121,67 @@ public class RequestUsersInfoSteps extends ApiUtils {
         Assert.assertTrue(response.getTimeIn(TimeUnit.SECONDS) <= 10, "Response time is not within limit");
     }
 
-    //Ninth scenario - TC05-a
+    //Sixth scenario - TC06
+    @Given("^User is on Reqres site on user page with email \"([^\"]*)\"$")
+    public void user_is_on_reqres_site_on_user_page_with_email_something(String email) {
+        requestSpecification.pathParam("email", email);
+
+    }
+
+    @When("User wants to retrieve details for an user with that email")
+    public void userWantsToRetrieveDetailsForAnUserWithThatEmail() {
+        response = requestSpecification.get(Constants.PATH_EMAIL_RESOURCE);
+        response.then().log().all();
+    }
+
+    @Then("^The status code should be (\\d+) Not Found$")
+    public void theStatusCodeShouldBeNotFound(int statusCodeNotFound) {
+        Assert.assertEquals(response.statusCode(), statusCodeNotFound);
+        Assert.assertTrue(response.getTimeIn(TimeUnit.SECONDS) <= 10, "Response time is not within limit");
+    }
+
+    //Seventh scenario - TC07
+    @Given("User is on Reqres site and filling an user form for invalid user")
+    public void userIsOnReqresSiteAndFillingAnUserFormForInvalidUser(DataTable table) {
+        List<Map<String, String>> data = table.asMaps(String.class, String.class);
+        HashMap<String, Object> jsonObject = new HashMap<>();
+        jsonObject.put("job", data.get(0).get("job"));
+
+        requestSpecification.body(jsonObject);
+    }
+
+    @When("User sends the user form filled out for invalid user")
+    public void userSendsTheUserFormFilledOutForInvalidUser() {
+        response = requestSpecification.post(Constants.RESOURCE);
+        response.then().log().all();
+    }
+
+    @Then("The status code should be (\\d+) Bad Request")
+    public void theStatusCodeShouldBeBadRequest(int statusCodeBadRequest) {
+        Assert.assertEquals(response.statusCode(), statusCodeBadRequest);
+        Assert.assertTrue(response.getTimeIn(TimeUnit.SECONDS) <= 10, "Response time is not within limit");
+    }
+
+    //Eighth scenario - TC08
+    @Given("User is on Reqres site and updating an user with no payload")
+    public void userIsOnReqresSiteAndUpdatingAnUserWithNoPayload(DataTable table) {
+        List<Map<String, String>> data = table.asMaps(String.class, String.class);
+        requestSpecification.pathParam("id", data.get(0).get("id"));
+
+        HashMap<String, Object> jsonObject = new HashMap<>();
+        jsonObject.put("name", data.get(0).get("name"));
+        jsonObject.put("job", data.get(0).get("job"));
+
+        requestSpecification.body(jsonObject);
+    }
+
+    @Then("The status code should be (\\d+) Forbidden")
+    public void theStatusCodeShouldBeForbidden(int statusCodeForbidden) {
+        Assert.assertEquals(response.statusCode(), statusCodeForbidden);
+        Assert.assertTrue(response.getTimeIn(TimeUnit.SECONDS) <= 10, "Response time is not within limit");
+    }
+
+    //Ninth scenario - TC09
     @Given("User is on Reqres site on users page")
     public void userIsOnReqresSiteOnUsersPage(DataTable table) {
         List<Map<String, String>> data = table.asMaps(String.class, String.class);
