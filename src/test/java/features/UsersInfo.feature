@@ -33,19 +33,19 @@ Feature: Check the functionality of the Users feature
 #Fourth scenario
   @TC03
   Scenario: Check the response on POST operation for creating an user
-    Given User is on Reqres site and filling a sign up form
+    Given User is on Reqres site and filling a user form
       | email                | first_name | last_name | job    |
       | may_maymay@reqres.in | may        | maymay    | tester |
-    When User sends the sign up form filled out
+    When User sends the user form filled out
     Then The status code should be 201 Created
 
 #Fifth scenario
   @TC03-a
   Scenario: Check the response on POST operation for creating an user with required fields not filled out
-    Given User is on Reqres site and filling a sign up form for invalid user
+    Given User is on Reqres site and filling a user form for invalid user
       | job    |
       | tester |
-    When User sends the sign up form filled out for invalid user
+    When User sends the user form filled out for invalid user
     Then The status code should be 400 Bad Request
 
 #Sixth scenario

@@ -70,8 +70,8 @@ public class RequestUsersInfoSteps extends ApiUtils {
     }
 
     //Fourth scenario - TC03
-    @Given("User is on Reqres site and filling a sign up form")
-    public void userIsOnReqresSiteAndFillingASignUpForm(DataTable table) {
+    @Given("User is on Reqres site and filling a user form")
+    public void userIsOnReqresSiteAndFillingAUserForm(DataTable table) {
         List<Map<String, String>> data = table.asMaps(String.class, String.class);
 
         HashMap<String, Object> jsonObject = new HashMap<>();
@@ -83,8 +83,8 @@ public class RequestUsersInfoSteps extends ApiUtils {
         requestSpecification.body(jsonObject);
     }
 
-    @When("User sends the sign up form filled out")
-    public void userSendsTheSignUpFormFilledOut() {
+    @When("User sends the user form filled out")
+    public void userSendsTheUserFormFilledOut() {
         response = requestSpecification.post(Constants.RESOURCE);
         response.then().log().all();
     }
@@ -95,17 +95,17 @@ public class RequestUsersInfoSteps extends ApiUtils {
     }
 
     //Fifth scenario - TC03-a
-    @Given("User is on Reqres site and filling a sign up form for invalid user")
-    public void userIsOnReqresSiteAndFillingASignUpFormForInvalidUser(DataTable table) {
-        List<Map<String, String>> data = table.asMaps(String.class,String.class);
+    @Given("User is on Reqres site and filling a user form for invalid user")
+    public void userIsOnReqresSiteAndFillingAUserFormForInvalidUser(DataTable table) {
+        List<Map<String, String>> data = table.asMaps(String.class, String.class);
         HashMap<String, Object> jsonObject = new HashMap<>();
         jsonObject.put("job", data.get(0).get("job"));
 
         requestSpecification.body(jsonObject);
     }
 
-    @When("User sends the sign up form filled out for invalid user")
-    public void userSendsTheSignUpFormFilledOutForInvalidUser() {
+    @When("User sends the user form filled out for invalid user")
+    public void userSendsTheUserFormFilledOutForInvalidUser() {
         response = requestSpecification.post(Constants.RESOURCE);
         response.then().log().all();
     }
@@ -118,7 +118,7 @@ public class RequestUsersInfoSteps extends ApiUtils {
     //Sixth scenario - TC04
     @Given("^User is on Reqres site and updating an user$")
     public void userIsOnReqresSiteAndUpdatingAnUserWithId(DataTable table) {
-        List<Map<String, String>> data = table.asMaps(String.class,String.class);
+        List<Map<String, String>> data = table.asMaps(String.class, String.class);
 
         requestSpecification.pathParam("id", data.get(0).get("id"));
 
@@ -139,7 +139,7 @@ public class RequestUsersInfoSteps extends ApiUtils {
     //Seventh scenario - TC04-a
     @Given("User is on Reqres site and updating an user with no payload")
     public void userIsOnReqresSiteAndUpdatingAnUserWithNoPayload(DataTable table) {
-        List<Map<String, String>> data = table.asMaps(String.class,String.class);
+        List<Map<String, String>> data = table.asMaps(String.class, String.class);
         requestSpecification.pathParam("id", data.get(0).get("id"));
 
         HashMap<String, Object> jsonObject = new HashMap<>();
@@ -157,7 +157,7 @@ public class RequestUsersInfoSteps extends ApiUtils {
     //Eighth scenario - TC05
     @Given("User is on Reqres site on user page")
     public void userIsOnReqresSiteOnUserPage(DataTable table) {
-        List<Map<String, String>> data = table.asMaps(String.class,String.class);
+        List<Map<String, String>> data = table.asMaps(String.class, String.class);
         HashMap<String, Object> jsonObject = new HashMap<>();
         jsonObject.put("id", data.get(0).get("id"));
 
@@ -178,7 +178,7 @@ public class RequestUsersInfoSteps extends ApiUtils {
     //Ninth scenario - TC05-a
     @Given("User is on Reqres site on users page")
     public void userIsOnReqresSiteOnUsersPage(DataTable table) {
-        List<Map<String, String>> data = table.asMaps(String.class,String.class);
+        List<Map<String, String>> data = table.asMaps(String.class, String.class);
         HashMap<String, Object> jsonObject = new HashMap<>();
         jsonObject.put("first_name", data.get(0).get("first_name"));
 
