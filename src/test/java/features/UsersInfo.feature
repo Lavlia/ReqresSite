@@ -1,7 +1,7 @@
 Feature: Check the functionality of the Users feature
   As an user
-  I want to retrieve a list of users
-  So i can search my friends
+  I want to explore the site
+  So i can become an user, search my friends and delete my account
 
 #First scenario
   @TC01

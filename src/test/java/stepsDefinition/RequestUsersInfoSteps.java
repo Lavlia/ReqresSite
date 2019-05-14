@@ -15,6 +15,7 @@ import utils.Constants;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 public class RequestUsersInfoSteps extends ApiUtils {
 
@@ -36,6 +37,7 @@ public class RequestUsersInfoSteps extends ApiUtils {
     @Then("^The status code should be (\\d+) Ok$")
     public void theStatusCodeShouldBeOk(int statusCodeOk) {
         Assert.assertEquals(response.statusCode(), statusCodeOk);
+        Assert.assertTrue(response.getTimeIn(TimeUnit.SECONDS) <= 10, "Response time is not within limit");
     }
 
 
@@ -67,6 +69,7 @@ public class RequestUsersInfoSteps extends ApiUtils {
     @Then("^The status code should be (\\d+) Not Found$")
     public void theStatusCodeShouldBeNotFound(int statusCodeNotFound) {
         Assert.assertEquals(response.statusCode(), statusCodeNotFound);
+        Assert.assertTrue(response.getTimeIn(TimeUnit.SECONDS) <= 10, "Response time is not within limit");
     }
 
     //Fourth scenario - TC03
@@ -92,6 +95,7 @@ public class RequestUsersInfoSteps extends ApiUtils {
     @Then("The status code should be (\\d+) Created")
     public void theStatusCodeShouldBeCreated(int statusCodeCreated) {
         Assert.assertEquals(response.statusCode(), statusCodeCreated);
+        Assert.assertTrue(response.getTimeIn(TimeUnit.SECONDS) <= 10, "Response time is not within limit");
     }
 
     //Fifth scenario - TC03-a
@@ -113,6 +117,7 @@ public class RequestUsersInfoSteps extends ApiUtils {
     @Then("The status code should be (\\d+) Bad Request")
     public void theStatusCodeShouldBeBadRequest(int statusCodeBadRequest) {
         Assert.assertEquals(response.statusCode(), statusCodeBadRequest);
+        Assert.assertTrue(response.getTimeIn(TimeUnit.SECONDS) <= 10, "Response time is not within limit");
     }
 
     //Sixth scenario - TC04
@@ -152,6 +157,7 @@ public class RequestUsersInfoSteps extends ApiUtils {
     @Then("The status code should be (\\d+) Forbidden")
     public void theStatusCodeShouldBeForbidden(int statusCodeForbidden) {
         Assert.assertEquals(response.statusCode(), statusCodeForbidden);
+        Assert.assertTrue(response.getTimeIn(TimeUnit.SECONDS) <= 10, "Response time is not within limit");
     }
 
     //Eighth scenario - TC05
@@ -173,6 +179,7 @@ public class RequestUsersInfoSteps extends ApiUtils {
     @Then("The status code should be (\\d+) No Content")
     public void theStatusCodeShouldBeNoContent(int statusCodeNoContent) {
         Assert.assertEquals(response.statusCode(), statusCodeNoContent);
+        Assert.assertTrue(response.getTimeIn(TimeUnit.SECONDS) <= 10, "Response time is not within limit");
     }
 
     //Ninth scenario - TC05-a
